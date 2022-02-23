@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center mt-3 mb-4" *ngIf="!editar">Agregar Usuarios</h2>
+            <h2 class="text-center mt-3 mb-4" *ngIf="editar">Editar Usuario</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <input type="text" placeholder="Usuario" disabled="true" [(ngModel)]="usuario.usuario" required class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            
+            <input type="password"  placeholder="Contraseña" [(ngModel)]="usuario.contrasena" required class="form-control mb-3">
+            
+        </div>
+        <div class="col-xs-12 col-md-6">
+            
+            <input type="text" placeholder="Nombre" [(ngModel)]="usuario.nombre" required class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <input type="text" placeholder="Apellido" [(ngModel)]="usuario.apellido" required class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <input type="number" placeholder="Teléfono" [(ngModel)]="usuario.telefono" required class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <input type="text" placeholder="Usuario Creador" *ngIf="!editar" [(ngModel)]="usuario.usuario_creacion" required class="form-control mb-3">
+            <input type="text" placeholder="Usuario Creador" *ngIf="editar" disabled="true" [(ngModel)]="usuario.usuario_creacion" required class="form-control mb-3">
+        </div>
+        <div class="col-xs-12">
+            <select class="form-select" [(ngModel)]="usuario.estado" required>
+                <option value="A">Activo</option>
+                <option value="I">Inactivo</option>
+            </select>
+        </div>
+        <div class="col-12 d-flex justify-content-center gap-4 mt-3">
+            <button class="btn btn-outline-danger"  (click)="regresar()">Cancelar</button>
+            <button class="btn btn-outline-primary" *ngIf="editar" (click)="actualizar()">Actualizar</button>
+            <button class="btn btn-outline-primary" *ngIf="!editar" (click)="agregar()">Guardar</button>
+        </div>
+    </div>
+</div>

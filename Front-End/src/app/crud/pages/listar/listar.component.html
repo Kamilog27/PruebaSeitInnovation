@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center mt-3 mb-4">Lista de Usuarios</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive-md">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>                
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Info</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let usuario of usuarios">
+                            <td> {{usuario.id}} </td>
+                            <td> {{usuario.nombre}} </td>
+                            <td> {{usuario.apellido}} </td>
+                            <td> {{usuario.estado}} </td>
+                            <td> <a class="link-info" [routerLink]="['/dashboard',usuario.id]"> Más...</a></td>
+                            <td> <a [routerLink]="['/dashboard/editar',usuario.id]"><i class="fa-solid fa-pencil"></i></a> </td>
+                            <td> <a routerLink="" (click)="borrar(usuario)"><i class="fa-solid fa-trash-can"></i> </a> </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

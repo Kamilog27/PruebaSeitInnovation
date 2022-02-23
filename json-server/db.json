@@ -1,0 +1,32 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "Administrador",
+      "contrasena": "123456",
+      "nombre": "Juan",
+      "apellido": "Garcia",
+      "telefono": "990000012",
+      "id_rol": "1",
+      "fecha_creacion": "Tue, 21 Feb 2022 20:39:24 GMT",
+      "usuario_creacion": "Juan",
+      "fecha_actualizacion": "",
+      "usuario_actualizacion": "",
+      "estado": "A"
+    },
+    {
+      "usuario": "Usuario",
+      "contrasena": "231321",
+      "nombre": "Test1",
+      "apellido": "Test1",
+      "telefono": 13213213,
+      "id_rol": "2",
+      "fecha_creacion": "Tue, 22 Feb 2022 18:30:25 GMT",
+      "fecha_actualizacion": "Tue, 22 Feb 2022 18:30:51 GMT",
+      "usuario_creacion": "Juan",
+      "usuario_actualizacion": "",
+      "estado": "A",
+      "id": "a8YvwkV"
+    }
+  ]
+}

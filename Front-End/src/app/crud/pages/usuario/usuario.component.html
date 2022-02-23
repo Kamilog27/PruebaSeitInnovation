@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center mt-3 mb-4">Información del usuario</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <label for=""> Usuario</label>
+            <input type="text" placeholder="Usuario" disabled="true" [(ngModel)]="usuario.usuario" class="form-control mb-3">
+        </div>
+        
+        <div class="col-xs-12 col-md-6">
+            <label for=""> Nombre</label>
+            <input type="text" placeholder="Nombre" disabled="true" [(ngModel)]="usuario.nombre"  class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <label for=""> Apellido</label>
+            <input type="text" placeholder="Apellido" disabled="true" [(ngModel)]="usuario.apellido"  class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <label for=""> Teléfono</label>
+            <input type="text" placeholder="Teléfono" disabled="true" [(ngModel)]="usuario.telefono"  class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <label for=""> Usuario Creador</label>
+            <input type="text" placeholder="Usuario Creador" disabled="true" [(ngModel)]="usuario.usuario_creacion"  class="form-control mb-3">
+        </div>
+        
+        <div class="col-xs-12 col-md-6">
+            <label for="">Estado</label>
+            <input type="text" placeholder="Estado" disabled="true" [(ngModel)]="usuario.estado"  class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <label for=""> Fecha de Creación</label>
+            <input type="text" placeholder="Fecha Creacion" disabled="true" [(ngModel)]="usuario.fecha_creacion"class="form-control mb-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <label for=""> Fecha de Actualización</label>
+            <input type="text" placeholder="Fecha Actualización" disabled="true" [(ngModel)]="usuario.fecha_actualizacion"class="form-control mb-3">
+        </div>
+        
+        <div class="col-12 d-flex justify-content-center mt-3">
+            <button class="btn btn-outline-danger" (click)="regresar()">Volver</button>
+        </div>
+    </div>
+</div>
